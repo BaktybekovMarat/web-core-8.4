@@ -4,10 +4,11 @@
 }
 body {
   font-family: "Barlow";
-  background-color: white;
+  background-color:#FFFFFF;
 }
 .container {
-  background-image: url("/img/bg.jpg");
+  background-color: #FFFFFF;
+  background-image: url(img/bg.jpg);
   width: 759px;
   height: 980px;
   position: relative;
@@ -42,7 +43,7 @@ body {
   margin-top: 15px;
   color: #96a5b1;
 }
-.texts {
+.title-and-text {
   padding: 20px;
   margin: 20px;
   margin-left: 50px;
@@ -54,8 +55,9 @@ body {
   margin-left: 70px;
 }
 .fb-link {
+  text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  
 }
 .fb-button img {
   width: 25px;
@@ -70,6 +72,9 @@ body {
   width: 250px;
   height: 50px;
   color: white;
+}
+.ln-link {
+  text-decoration: none;
 }
 .ln-button img {
   width: 25px;
