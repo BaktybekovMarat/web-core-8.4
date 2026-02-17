@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "TTLakes-Regular";
+  src: url("font/TTLakes-Regular.ttf") format("truetype");
+}
+body {
+  font-family: "TTLakes-Regular";
+}
+.block {
+  width: 320px;
+  height: 100vh;
+  background-color: #ffffff;
+  flex-direction: column;
+  box-shadow: 8px 0 12px -2px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+img {
+  transition: 0.4s ease-in-out;
+  filter: drop-shadow(4px);
+}
+img:hover {
+  background: silver;
+  transform: translateY(-2px);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+.block__parent,
+.block__list-parent,
+.block__list-parent2 {
+  list-style-type: none;
+}
+.block__parent {
+  display: flex;
+  gap: 20px;
+}
+.X {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  left: 20px;
+}
+.logo {
+  width: 96.54px;
+  height: 50.81px;
+  position: fixed;
+  left: 70px;
+  top: 10px;
+}
+.search {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  left: 250px;
+}
+.block__list-parent {
+  position: fixed;
+  top: 80px;
+  left: -20px;
+  line-height: 44px;
+  letter-spacing: 0.2px;
+  color: #1B1C21;
+}
+.block__list-parent > span {
+  border-left: 4px solid #41f6d7;
+  padding-left: 12px;
+  color: #7e7e82;
+}
+.block__list-parent2 {
+  display: flex;
+  gap: 20px;
+  position: fixed;
+  top: 540px;
+  left: -20px;
+}
+.block__contacts {
+    color: #1B1C21;
+  font-weight: bold;
+  position: fixed;
+  top: 590px;
+  left: 20px;
+}
+.block__contacts > p:nth-child {
+    font:bolder;
+  font-weight: 900;
+}
+.block__contacts span:first-of-type {
+  color: #7e7e82;
+}
