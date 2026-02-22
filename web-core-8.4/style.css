@@ -1,0 +1,214 @@
+@font-face {
+  font-family: "TTLakes-Regular";
+  src: url("font/TTLakes-Regular.ttf");
+}
+body {
+  background-color: #f8f8f8;
+  font-family: "TTLakes-Regular";
+  color: #7e7e82;
+  margin: 0px !important;
+}
+.title {
+  border-top: 1px solid #d9fff5;
+  background-color: #ffffff;
+}
+.title h1 {
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.content {
+  display: none;
+}
+.lenovo {
+  margin-left: 15px;
+  width: 108px;
+  height: 32px;
+}
+.samsung {
+  margin-left: 15px;
+  width: 116px;
+  height: 38.52px;
+}
+.apple {
+  margin-left: 15px;
+  width: 44px;
+  height: 44px;
+}
+.bosch {
+  margin-left: 15px;
+  width: 128px;
+  height: 28.6px;
+}
+.hp {
+  margin-left: 15px;
+  width: 52px;
+  height: 52px;
+}
+.acer {
+  margin-left: 15px;
+  width: 94px;
+  height: 24px;
+}
+.view-sonic {
+  margin-left: 15px;
+  width: 128px;
+  height: 21px;
+}
+.sony {
+  margin-left: 15px;
+  width: 128px;
+  height: 25.6px;
+}
+.btn-next {
+  margin: 0 15px;
+  border: none;
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+}
+@media (max-width: 767px) {
+  .showBtn,
+  .hideBtn,
+  .main-second-style__grid,
+  .grid--elements {
+    display: none;
+  }
+  .title {
+    height: 80px;
+    margin-left: 5px;
+  }
+  .swiper {
+    width: 100%;
+    height: 154px;
+    margin: 20px auto;
+  }
+  .swiper-wrapper {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 240px !important;
+    height: 72px;
+  }
+  .swiper-slide {
+    gap: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    width: 240px !important;
+    height: 72px;
+    margin: 0 5px;
+  }
+  .swiper-pagination {
+    color: #dddddd;
+  }
+}
+@media (min-width: 768px) {
+  .swiper,
+  .swiper-wrapper,
+  .swiper-wrapper,
+  .swiper-pagination {
+    display: none !important;
+  }
+  .title {
+    height: 56px;
+    margin: 0px 0px 25px 24px;
+  }
+  .main-second-style__grid {
+    display: grid;
+    margin-left: 24px;
+    grid-template-columns: repeat(4, 224px);
+    column-gap: 25px;
+    grid-template-rows: repeat(2, 72px);
+    row-gap: 25px;
+  }
+  .grid--elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 224px;
+    height: 72px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+  }
+  .grid-hidden-elements {
+    display: grid;
+    position: fixed;
+    left: 24px;
+    top: 275px;
+    grid-template-columns: repeat(3, 224px);
+    column-gap: 25px;
+    overflow: hidden;
+    height: 0;
+  }
+  .showBtn {
+    margin: 24px 0 0 24px;
+    width: 134px;
+    height: 24px;
+    display: flex;
+  }
+  .hideBtn {
+    margin-top: 24px;
+    width: 88px;
+    height: 24px;
+    display: flex;
+
+  }
+}
+@media (min-width:1120px) {
+  .swiper,
+  .swiper-wrapper,
+  .swiper-wrapper,
+  .swiper-pagination {
+    display: none !important;
+  }
+  .title {
+    height: 56px;
+    margin: 0 0 25px 24px;
+  }
+  .main-second-style__grid {
+    display: grid;
+    margin-left: 24px;
+    grid-template-columns: repeat(4, 240px);
+    column-gap: 25px;
+    grid-template-rows: repeat(2, 72px);
+    row-gap: 25px;
+  }
+  .grid--elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    height: 72px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+  }
+  .grid-hidden-elements {
+    display: grid;
+    position: fixed;
+    left: 24px;
+    top: 275px;
+    grid-template-columns: repeat(3, 240px);
+    column-gap: 25px;
+    overflow: hidden;
+    height: 0;
+  }
+  .showBtn {
+    margin: 24px 0 0 24px;
+    width: 134px;
+    height: 24px;
+    display: flex;
+  }
+  .hideBtn {
+    margin-top: 24px;
+    width: 88px;
+    height: 24px;
+    display: flex;
+
+  }
+}
