@@ -6,22 +6,21 @@ body {
   background-color: #f8f8f8;
   font-family: "TTLakes-Regular";
   color: #7e7e82;
-  margin: 0px !important;
+  margin: 0px;
 }
 .title {
-  border-top: 1px solid #d9fff5;
+  border-top: 1px solid   #D9FFF5;
   background-color: #ffffff;
+  width: 100%;
 }
 .title h1 {
-  font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.2px;
   text-transform: uppercase;
   font-size: 16px;
+  padding-left: 24px;
 }
-.content {
-  display: none;
-}
+
 .lenovo {
   margin-left: 15px;
   width: 108px;
@@ -69,7 +68,7 @@ body {
   width: 40px;
   height: 40px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .showBtn,
   .hideBtn,
   .main-second-style__grid,
@@ -78,7 +77,6 @@ body {
   }
   .title {
     height: 80px;
-    margin-left: 5px;
   }
   .swiper {
     width: 100%;
@@ -86,23 +84,22 @@ body {
     margin: 20px auto;
   }
   .swiper-wrapper {
-    gap: 10px;
     display: flex;
     align-items: center;
     color: white;
-    width: 240px !important;
+    width: 240px ;
     height: 72px;
   }
   .swiper-slide {
-    gap: 30px;
     display: flex;
+    gap: 30px;
     justify-content: space-around;
     align-items: center;
     background-color: #ffffff;
     border: 1px solid #eaeaea;
     width: 240px !important;
     height: 72px;
-    margin: 0 5px;
+    margin: 0 15px;
   }
   .swiper-pagination {
     color: #dddddd;
@@ -113,22 +110,22 @@ body {
   .swiper-wrapper,
   .swiper-wrapper,
   .swiper-pagination {
-    display: none !important;
+    display: none;
   }
   .title {
     height: 56px;
-    margin: 0px 0px 25px 24px;
+    margin-bottom: 25px;
   }
   .main-second-style__grid {
     display: grid;
-    margin-left: 24px;
+    margin:0 24px;
     grid-template-columns: repeat(4, 224px);
     column-gap: 25px;
     grid-template-rows: repeat(2, 72px);
     row-gap: 25px;
   }
   .grid--elements {
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     align-items: center;
     width: 224px;
@@ -141,13 +138,14 @@ body {
     position: fixed;
     left: 24px;
     top: 275px;
+    right: 24px;
     grid-template-columns: repeat(3, 224px);
     column-gap: 25px;
     overflow: hidden;
     height: 0;
   }
   .showBtn {
-    margin: 24px 0 0 24px;
+    margin: 28px 0 0 24px;
     width: 134px;
     height: 24px;
     display: flex;
@@ -165,16 +163,16 @@ body {
   .swiper-wrapper,
   .swiper-wrapper,
   .swiper-pagination {
-    display: none !important;
+    display: none;
   }
   .title {
     height: 56px;
-    margin: 0 0 25px 24px;
+    margin-bottom:25px;
   }
   .main-second-style__grid {
     display: grid;
-    margin-left: 24px;
-    grid-template-columns: repeat(4, 240px);
+    margin:0 24px;
+    grid-template-columns: repeat(4, 250px);
     column-gap: 25px;
     grid-template-rows: repeat(2, 72px);
     row-gap: 25px;
@@ -192,14 +190,15 @@ body {
     display: grid;
     position: fixed;
     left: 24px;
+    right: 24px;
     top: 275px;
-    grid-template-columns: repeat(3, 240px);
+    grid-template-columns: repeat(3, 250px);
     column-gap: 25px;
     overflow: hidden;
     height: 0;
   }
   .showBtn {
-    margin: 24px 0 0 24px;
+    margin: 28px 0 0 24px;
     width: 134px;
     height: 24px;
     display: flex;
