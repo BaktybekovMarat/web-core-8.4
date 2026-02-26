@@ -5,22 +5,23 @@
 body {
   background-color: #f8f8f8;
   font-family: "TTLakes-Regular";
-  color: #7e7e82;
   margin: 0px;
 }
 .title {
-  border-top: 1px solid   #D9FFF5;
-  background-color: #ffffff;
-  width: 100%;
+  min-width: 320px;
+  border-top: 1px solid #d9fff5;
+  background: linear-gradient(270deg, #f8f8f8 0%, #ffffff 98.61%);
 }
 .title h1 {
+  display: flex;
+  align-items: center;
+  color: #7e7e82;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.2px;
   text-transform: uppercase;
   font-size: 16px;
-  padding-left: 24px;
 }
-
 .lenovo {
   margin-left: 15px;
   width: 108px;
@@ -68,7 +69,7 @@ body {
   width: 40px;
   height: 40px;
 }
-@media (max-width: 768px) {
+@media (min-width: 320px), (max-width: 768px) {
   .showBtn,
   .hideBtn,
   .main-second-style__grid,
@@ -76,7 +77,9 @@ body {
     display: none;
   }
   .title {
-    height: 80px;
+    display: flex;
+    height: 56px;
+    padding-left: 16px;
   }
   .swiper {
     width: 100%;
@@ -84,22 +87,23 @@ body {
     margin: 20px auto;
   }
   .swiper-wrapper {
+    gap: 10px;
     display: flex;
     align-items: center;
     color: white;
-    width: 240px ;
+    width: 240px;
     height: 72px;
   }
   .swiper-slide {
-    display: flex;
     gap: 30px;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #ffffff;
     border: 1px solid #eaeaea;
     width: 240px !important;
     height: 72px;
-    margin: 0 15px;
+    margin: 0 16px;
   }
   .swiper-pagination {
     color: #dddddd;
@@ -113,19 +117,20 @@ body {
     display: none;
   }
   .title {
+    display: flex;
     height: 56px;
     margin-bottom: 25px;
+    padding-left: 24px;
   }
   .main-second-style__grid {
     display: grid;
-    margin:0 24px;
-    grid-template-columns: repeat(4, 224px);
-    column-gap: 25px;
+    margin: 0 24px;
+    grid-template-columns: repeat(3, minmax(224px, 1fr));
     grid-template-rows: repeat(2, 72px);
-    row-gap: 25px;
+    row-gap: 24px;
   }
   .grid--elements {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 224px;
@@ -135,47 +140,65 @@ body {
   }
   .grid-hidden-elements {
     display: grid;
-    position: fixed;
-    left: 24px;
-    top: 275px;
-    right: 24px;
-    grid-template-columns: repeat(3, 224px);
-    column-gap: 25px;
+    grid-template-columns: repeat(3, minmax(224px, 1fr));
+    grid-template-rows: repeat(1, 72px);
     overflow: hidden;
     height: 0;
+    margin: 24px 24px 0 24px;
   }
   .showBtn {
-    margin: 28px 0 0 24px;
+    margin: 24px 0 0 24px;
     width: 134px;
     height: 24px;
     display: flex;
+    border: none;
+    color: #1b1c21;
+    background-color: #f8f8f8;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    position: fixed;  
+    top: 250px;
+    left:5px;  
   }
   .hideBtn {
-    margin-top: 24px;
+    margin: 24px 32px 0 24px;
     width: 88px;
     height: 24px;
     display: flex;
-
+    border: none;
+    color: #1b1c21;
+    background-color: #f8f8f8;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    overflow: hidden;
+    height: 0;
+    position: fixed;
+    top: 345px;
+    left: 5px;
   }
 }
-@media (min-width:1120px) {
+@media (min-width: 1120px) {
   .swiper,
   .swiper-wrapper,
   .swiper-wrapper,
   .swiper-pagination {
     display: none;
   }
+  .desktop-version-elements {
+    display: flex !important;
+    justify-content: space-between;
+  }
   .title {
     height: 56px;
-    margin-bottom:25px;
+    margin-bottom: 25px;
+    padding-left: 32px;
   }
   .main-second-style__grid {
     display: grid;
-    margin:0 24px;
-    grid-template-columns: repeat(4, 250px);
-    column-gap: 25px;
+    margin: 0 32px;
+    grid-template-columns: repeat(4, minmax(240px, 1fr));
     grid-template-rows: repeat(2, 72px);
-    row-gap: 25px;
+    row-gap: 24px;
   }
   .grid--elements {
     display: flex;
@@ -188,26 +211,40 @@ body {
   }
   .grid-hidden-elements {
     display: grid;
-    position: fixed;
-    left: 24px;
-    right: 24px;
-    top: 275px;
-    grid-template-columns: repeat(3, 250px);
-    column-gap: 25px;
+    grid-template-columns: repeat(4, minmax(240px, 1fr));
+    grid-template-rows: repeat(1, 72px);
     overflow: hidden;
     height: 0;
+    margin: 24px 32px 0 32px;
   }
   .showBtn {
-    margin: 28px 0 0 24px;
+    margin: 24px 0 0 32px;
     width: 134px;
     height: 24px;
     display: flex;
+    border: none;
+    color: #1b1c21;
+    background-color: #f8f8f8;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    position: fixed;  
+    top: 250px;
+    left: 5px;
   }
   .hideBtn {
-    margin-top: 24px;
+    margin: 24px 0 0 32px;
     width: 88px;
     height: 24px;
     display: flex;
-
+    border: none;
+    color: #1b1c21;
+    background-color: #f8f8f8;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    overflow: hidden;
+    height: 0;
+    position: fixed;
+    top: 345px;
+    left: 5px;
   }
 }
